@@ -32,7 +32,7 @@ const metadata = {
         text: 'Contact Us',
         href: 'src/pages/contact.astro',
         target: '_blank',
-        icon: 'tabler:phone-outgoing'
+        icon: 'tabler:phone-outgoing',
       },
       { text: 'Learn more', href: '#features' },
     ]}
@@ -45,11 +45,11 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">PISO-WIFI</span> Stay online with our reliable PisoWiFi service! Whether for work, study, 
+        <span class="font-semibold">PISO-WIFI</span> Stay online with our reliable PisoWiFi service! Whether for work, study,
         or entertainment, we provide high-speed internet at an affordable price.</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">Stay Connected Anytime!</span>Fast,
-       affordable PisoWiFi—perfect for work, study, or entertainment. No contracts, just seamless internet anytime!
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">Stay Connected Anytime!</span>Fast, affordable
+      PisoWiFi—perfect for work, study, or entertainment. No contracts, just seamless internet anytime!
     </Fragment>
   </Hero>
 
@@ -59,7 +59,8 @@ const metadata = {
 
   <!-- Features Widget *************** -->
 
-  <Features id="features"
+  <Features
+    id="features"
     id="features"
     tagline="Features"
     title="PISO-WIFI"
@@ -73,14 +74,12 @@ const metadata = {
       },
       {
         title: 'Easy Access & User-Friendly',
-        description:
-          'Simply connect, insert coins, and start browsing. No apps or registrations required!',
+        description: 'Simply connect, insert coins, and start browsing. No apps or registrations required!',
         icon: 'tabler:clock-bolt',
       },
       {
         title: 'Secure & Private Browsing',
-        description:
-          'Your connection is safe and encrypted, protecting users from potential security risks.',
+        description: 'Your connection is safe and encrypted, protecting users from potential security risks.',
         icon: 'tabler:lock-access',
       },
       {
@@ -106,18 +105,17 @@ const metadata = {
 
   <!-- Content Widget **************** -->
 
-  <Content id="services"
+  <Content
+    id="services"
     isReversed
     tagline="SERVICES"
     title="PisoWiFi Connect: Speed Meets Affordability!"
     items={[
       {
         title: 'Pay-per-use internet access for customers.',
-       
       },
       {
         title: 'Different time-based rates (e.g., 10 minutes, 30 minutes, 1 hour).',
-        
       },
       // {
       //   title: 'Cross-browser compatibility',
@@ -128,12 +126,12 @@ const metadata = {
     image={{
       src: wifiImage,
       alt: 'Colorful Image',
-      
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Standard PisoWiFi Internet Access</h3>
-      
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Standard PisoWiFi Internet Access
+      </h3>
     </Fragment>
 
     <Fragment slot="bg">
@@ -148,11 +146,9 @@ const metadata = {
     items={[
       {
         title: 'Offer PisoWiFi solutions for stores, cafés, and public areas.',
-        
       },
       {
         title: 'Monthly plans for business owners who want to provide internet access to their customers.',
-        
       },
       // {
       //   title: 'Fully responsive design',
@@ -174,7 +170,7 @@ const metadata = {
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Business & Commercial Packages</h3>
-      </Fragment>
+    </Fragment>
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>,
@@ -188,11 +184,9 @@ const metadata = {
     items={[
       {
         title: 'Optimized internet for gaming cafés or mobile streamers.',
-       
       },
       {
         title: 'Special gaming plans for low-latency connections.',
-        
       },
       // {
       //   title: 'Time and resource efficiency',
@@ -207,7 +201,6 @@ const metadata = {
     image={{
       src: wifiGaming,
       alt: 'Gaming Image',
-     
     }}
   >
     <Fragment slot="content">
@@ -221,40 +214,37 @@ const metadata = {
 
   <!-- Steps Widget ****************** -->
 
-  <Steps id="steps"
+  <Steps
+    id="steps"
     title="Here’s how your customers can easily connect to PisoWiFi:"
     items={[
       {
         title: 'Step 1: <span class="font-medium">Connect to WiFi</span>',
-        description:
-          "Turn on your device’s WiFi and select [Your PisoWiFi Name] from the network list.",
+        description: 'Turn on your device’s WiFi and select [Your PisoWiFi Name] from the network list.',
         icon: 'tabler:wifi',
       },
       {
         title: 'Step 2: <span class="font-medium">Open the Login Page</span>',
         description:
-          "Once connected, open a browser, and the PisoWiFi portal will appear automatically. If not, go to [your PisoWiFi IP, e.g., 10.0.0.1].",
+          'Once connected, open a browser, and the PisoWiFi portal will appear automatically. If not, go to [your PisoWiFi IP, e.g., 10.0.0.1].',
         icon: 'tabler:login',
       },
       {
         title: 'Step 3: <span class="font-medium">Choose a Time Package</span>',
-        description:
-          'Select your preferred internet duration (e.g., 10 mins, 30 mins, 1 hour).',
+        description: 'Select your preferred internet duration (e.g., 10 mins, 30 mins, 1 hour).',
         icon: 'tabler:clock-hour-10',
       },
       {
         title: 'Step 3: <span class="font-medium">Insert Coins</span>',
-        description:
-          'Drop the required amount into the coin slot to activate your internet session.',
+        description: 'Drop the required amount into the coin slot to activate your internet session.',
         icon: 'tabler:currency-peso',
       },
       {
         title: 'Step 3: <span class="font-medium"> Start Browsing!</span>',
-        description:
-          'Enjoy seamless and fast internet for work, study, or entertainment!',
+        description: 'Enjoy seamless and fast internet for work, study, or entertainment!',
         icon: 'tabler:mood-smile-beam',
       },
-      
+
       {
         title: 'Need More Time? Simply add more coins before your session ends to extend your connection.',
         icon: 'tabler:clock-hour-1',
@@ -263,32 +253,30 @@ const metadata = {
     image={{
       src: wifiLogin.src,
       alt: 'wifilogin Image',
-      
     }}
   />
 
   <!-- Features2 Widget ************** -->
 
-  <Features2 id="systems"
+  <Features2
+    id="systems"
     title="Systems Offered"
     subtitle=""
     tagline="SYSTEMS"
     items={[
       {
         title: 'LBP (Load Balance PisoWiFi)',
-        description: "A popular PisoWiFi system that helps manage multiple internet connections efficiently.",
+        description: 'A popular PisoWiFi system that helps manage multiple internet connections efficiently.',
         icon: 'flat-color-icons:template',
       },
       {
         title: 'JuanFi',
-        description:
-          "Ideal for beginners as it requires minimal technical knowledge.",
+        description: 'Ideal for beginners as it requires minimal technical knowledge.',
         icon: 'flat-color-icons:gallery',
       },
       {
         title: 'PisoFi',
-        description:
-          'Provides custom branding, user tracking, and flexible pricing options.',
+        description: 'Provides custom branding, user tracking, and flexible pricing options.',
         icon: 'flat-color-icons:approval',
       },
     ]}

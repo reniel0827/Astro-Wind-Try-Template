@@ -1,4 +1,4 @@
-import {getPermalink,getAsset } from './utils/permalinks';
+import { getPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -26,7 +26,7 @@ export const headerData = {
     },
     {
       text: 'Features',
-      href: getPermalink('#features')
+      href: getPermalink('#features'),
       // links: [
       //   {
       //     text: 'Features (Anchor Link)',
@@ -60,7 +60,7 @@ export const headerData = {
     },
     {
       text: 'Services',
-      href: getPermalink('#services')
+      href: getPermalink('#services'),
       // links: [
       //   {
       //     text: 'Lead Generation',
@@ -90,7 +90,7 @@ export const headerData = {
     },
     {
       text: 'How to Connect',
-      href: getPermalink('#steps')
+      href: getPermalink('#steps'),
       // links: [
       //   {
       //     text: 'Blog List',
